@@ -29,7 +29,7 @@ if (num1 !== 5) {
 */
 
 let num = 10; // Inserire il numero in questa variabile
-const operat = num % 5;
+let operat = num % 5;
 
 if (operat === 0) {
   console.log("divisibile per 5");
@@ -76,7 +76,7 @@ console.log(first, second, third);
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-let num1 = 2;
+let num0 = 2;
 operat = num1 % 2;
 
 if (num1 > 0) {
