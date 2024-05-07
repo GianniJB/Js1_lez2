@@ -37,13 +37,9 @@ if (operat === 0) {
   console.log("non divisibile per 5");
 }
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -80,7 +76,12 @@ console.log(first, second, third);
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num1 = 2;
+operat = num1 % 2;
+
+if (num1 > 0) {
+  console.log("il numero è pari");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -134,10 +135,14 @@ console.log(me.skills);
 
 let listaNumeri = [];
 
-listaNumeri.push();
+listaNumeri.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+console.log(listaNumeri);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+listaNumeri[listaNumeri.length - 1] = 100;
+
+console.log(listaNumeri);
