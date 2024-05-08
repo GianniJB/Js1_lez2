@@ -10,9 +10,13 @@
 
 // console.log(numeri);
 
+///////////////////////////////////////////////////////////////////////
 // PROVA 2 SENZA CREARE ARRAY
 
 console.log("il numero più grande è", Math.max(23, 34));
+
+//////////////////////////////////////////////////////////////////////
+// PROVA 3
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -47,14 +51,21 @@ if (operat === 0) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 40;
+let checkout;
+
+if (totalShoppingCart <= 50) {
+  checkout = totalShoppingCart + 10;
+} else {
+  checkout = totalShoppingCart;
+}
+
+console.log("Il totale è di €", checkout);
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -62,9 +73,40 @@ if (operat === 0) {
   Alla fine mostra il risultato in console.
 */
 
-let first = 7;
-let second = 14;
-let third = 21;
+//let precedentemente dichiarate
+/*
+num = 10
+num1 = 4
+totalShoppingCart = 40
+*/
+
+let first;
+let second;
+let third;
+
+if (num > num1 && num > totalShoppingCart) {
+  first = num;
+} else if (num > num1 || num > totalShoppingCart) {
+  second = num;
+} else if (num < num1 && num < totalShoppingCart) {
+  third = num;
+}
+
+if (num1 > num && num1 > totalShoppingCart) {
+  first = num1;
+} else if (num1 > num || num1 > totalShoppingCart) {
+  second = num1;
+} else if (num1 < num && num1 < totalShoppingCart) {
+  third = num1;
+}
+
+if (totalShoppingCart > num && totalShoppingCart > num1) {
+  first = totalShoppingCart;
+} else if (totalShoppingCart > num || totalShoppingCart > num1) {
+  second = totalShoppingCart;
+} else if (totalShoppingCart < num && totalShoppingCart < num1) {
+  third = totalShoppingCart;
+}
 
 console.log(first, second, third);
 
@@ -72,11 +114,18 @@ console.log(first, second, third);
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
+if (typeof num1 === "number") {
+  console.log("Il valore è un numero");
+} else {
+  console.log("il valore non è un numero");
+}
+
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-let num0 = 2;
+//let num1 = 4 (precedentemente dichiarato)
+
 operat = num1 % 2;
 
 if (num1 > 0) {
